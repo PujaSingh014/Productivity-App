@@ -78,16 +78,7 @@ class _NavDrawerState extends State<NavDrawer> {
                       return Pomodoro();
                     }));
               }),
-          ListTile(
-              leading: Icon(Icons.person_pin,color: Colors.white,),
-              title: Text('Profile',style: TextStyle(color: Colors.white),),
-              onTap: () {
-                Navigator.of(context).pop();
-                Navigator.pushReplacement(context,
-                    MaterialPageRoute(builder: (_) {
-                      return ProfilePage();
-                    }));
-              }),
+        
           ListTile(
             leading: Icon(Icons.logout,color: Colors.white,),
             title: Text('Logout',style: TextStyle(color: Colors.white),),
@@ -110,6 +101,7 @@ class _NavDrawerState extends State<NavDrawer> {
               pref.remove('fri');
               pref.remove('sat');
               pref.remove('sun');
+              await FirebaseAuth.instance.signOut();
               Navigator.pushReplacement(context, MaterialPageRoute(builder: (_){
                 return SignInPage();
               }));
