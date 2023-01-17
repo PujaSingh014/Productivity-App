@@ -253,7 +253,7 @@ class _HomePageState extends State<HomePage> {
                                 mainAxisAlignment: MainAxisAlignment.spaceBetween,
                                 children: [
                                   Container(
-                                    width: 350,
+                                    width: MediaQuery.of(context).size.width*0.76,
                                     child: Text(
                                       qs['title'],
                                       softWrap: true,
