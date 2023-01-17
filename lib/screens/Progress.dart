@@ -152,8 +152,11 @@ class _StatsState extends State<Stats> {
             padding: const EdgeInsets.all(10.0),
             child: Container(
               decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/cover.jpeg'),
+                  fit: BoxFit.cover,
+                ),
                 borderRadius: BorderRadius.circular(10),
-                color: Colors.deepPurple[100]
               ),
               height: MediaQuery.of(context).size.height*0.4,
               width: MediaQuery.of(context).size.width*0.7,
@@ -174,9 +177,13 @@ class _StatsState extends State<Stats> {
                                   padding: EdgeInsets.all(10),
                                 ),
                                 Text(snapshot.data!.quoteText, style: TextStyle(
-                                    fontSize: 20
+                                    color: Colors.black,
+                                    fontSize: 20, fontWeight: FontWeight.bold
                                 ),),
-                                Text('-'+snapshot.data!.quoteAuthor),
+                                Text('-'+snapshot.data!.quoteAuthor, style: TextStyle(
+                                  color: Colors.white,
+                                  fontWeight: FontWeight.w400,
+                                ),),
                               ],
                             ),
                           ),
