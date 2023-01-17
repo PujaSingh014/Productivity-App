@@ -1,16 +1,30 @@
-# productivity_app
+# Productivity app
+To make your daily life more organized and productive!!
+An app to note your daily tasks with category. Weekly analysis is shown. Pomodoro method can be used to study effectively. Quote is fetched from FavQs api and shown.
+The web version of app can be viewed here https://productivity-app-707ba.web.app/
 
-A new Flutter project.
 
-## Getting Started
+# Tech Stack
 
-This project is a starting point for a Flutter application.
+<ul>
+   <li> Flutter </li>
+   <li> Firebase </li>
+   <li> Firestore </li>
+</ul>
 
-A few resources to get you started if this is your first Flutter project:
+# Key Features
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+<ul>
+   <li> Register and login with email id and password. </li>
+   <li> Email sent to reset password if user forgets the password</li>
+   <li> Login state is maintained until user logs out </li>
+   <li> Onboarding Page is shown when user signs up or reinstalls the app</li>
+   <li> Quote is fetched from FavQs api </li>
+   <li> Firestore is used to store and fetch data </li>
+   <li> Pomodoro timer with short and long break </li>
+   <li> Minimal UI and satisfying animations </li>
+   
+</ul>
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+
+# Screenshots
