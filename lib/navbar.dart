@@ -3,7 +3,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:productivity_app/screens/HomePage.dart';
 import 'package:productivity_app/screens/Pomodoro.dart';
-import 'package:productivity_app/screens/Profile.dart';
 import 'package:productivity_app/screens/Progress.dart';
 import 'package:productivity_app/screens/SignIn.dart';
 import 'package:shared_preferences/shared_preferences.dart';
@@ -38,7 +37,7 @@ class _NavDrawerState extends State<NavDrawer> {
   final fs = FirebaseFirestore.instance;
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: Colors.grey[850],
+      backgroundColor: Colors.deepPurple[400],
       child: ListView(
         padding: EdgeInsets.zero,
         children: <Widget>[
