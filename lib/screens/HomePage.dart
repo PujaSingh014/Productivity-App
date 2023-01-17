@@ -300,9 +300,12 @@ class _HomePageState extends State<HomePage> {
       body: SingleChildScrollView(
         child: Column(
           children: [
-            Text(
-              "Welcome " + uname + '!',
-              style: TextStyle(color: Color(0xFF4b39ba), fontSize: 20),
+             Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(
+                "Welcome " + uname + '!',
+                style: TextStyle(color: Color(0xFF4b39ba), fontSize: 20, fontWeight: FontWeight.bold),
+              ),
             ),
             const SizedBox(
               height: 5,
