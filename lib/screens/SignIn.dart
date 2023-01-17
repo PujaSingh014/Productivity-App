@@ -51,7 +51,7 @@ class _SignInPageState extends State<SignInPage> {
                   Text('Welcome',
                     textScaleFactor: 1.5,
                     style: TextStyle(
-                      color: Colors.lightBlueAccent,
+                      color: Color(0xFF4b39ba),
                       fontWeight: FontWeight.w600,
                     ),
                   ),
@@ -176,7 +176,7 @@ class _SignInPageState extends State<SignInPage> {
                         } ,
                         style: ElevatedButton.styleFrom(
                           minimumSize: Size(200, 50),
-                          backgroundColor: Colors.lightBlueAccent,
+                          backgroundColor: Color(0xFF4b39ba),
                           elevation: 10,  // Elevation
                           shadowColor: Colors.grey[300], //
                           foregroundColor: Colors.black87,
@@ -184,7 +184,7 @@ class _SignInPageState extends State<SignInPage> {
                               borderRadius: BorderRadius.circular(15)),
                         ),
                         child: Text("Sign In",
-                          style: TextStyle(fontSize: 20),)),
+                          style: TextStyle(color: Colors.white, fontSize: 20),)),
                   ),
                   Padding(
                     padding: const EdgeInsets.all(20.0),
