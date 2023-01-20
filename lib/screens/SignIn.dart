@@ -17,9 +17,14 @@ class SignInPage extends StatefulWidget {
 }
 
 class _SignInPageState extends State<SignInPage> {
+  TextEditingController _emailController = TextEditingController();
+   TextEditingController _passController = TextEditingController();
+
   @override
   bool showHome = false;
   void initState() {
+     _passController = TextEditingController();
+    _emailController = TextEditingController();
     super.initState();
     loadCounter();
   }
@@ -28,8 +33,6 @@ class _SignInPageState extends State<SignInPage> {
     showHome = prefs.getBool('showHome')?? false;
   }
   Widget build(BuildContext context) {
-    final TextEditingController _emailController = TextEditingController();
-    final TextEditingController _passController = TextEditingController();
     return Scaffold(
       backgroundColor: Color(0xFF988DDC),
       body: Center(
