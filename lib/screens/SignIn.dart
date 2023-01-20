@@ -147,15 +147,8 @@ class _SignInPageState extends State<SignInPage> {
                               Navigator.of(context).pushReplacement(MaterialPageRoute(builder: (context) => OnboardingPage()));
 
                           } on FirebaseAuthException catch (e) {
-                            String error = "";
-                            if (e.code == 'user-not-found') {
-                              error += "No user found for that email.";
-                            } else if (e.code == 'wrong-password') {
-                              error += "Wrong password provided for that user.";
-                            }
-                            else if(e.code=='invalid-email'){
-                              error += "Invalid email";
-                            }
+                            String error = e.code;
+                      
 
                             showDialog(
                               context: context,
