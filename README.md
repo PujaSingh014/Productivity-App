@@ -1,7 +1,7 @@
 # Productivity app
 To make your daily life more organized and productive!!
 An app to note your daily tasks with category. Weekly analysis is shown. Pomodoro method can be used to study effectively. Quote is fetched from FavQs api and shown.
-The web version of app can be viewed here https://productivity-app-707ba.web.app/
+
 
 
 # Tech Stack
