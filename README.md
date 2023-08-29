@@ -16,12 +16,14 @@ An app to note your daily tasks with category. Weekly analysis is shown. Pomodor
 
 <ul>
    <li> Register and login with email id and password. </li>
-   <li> Email sent to reset password if user forgets the password</li>
-   <li> Login state is maintained until user logs out </li>
-   <li> Onboarding Page is shown when user signs up or reinstalls the app</li>
-   <li> Quote is fetched from FavQs api </li>
+   <li> Email sent to reset password if user forgets the password.</li>
+   <li> Login state is maintained until user logs out. </li>
+   <li> Onboarding Page is shown when user signs up or reinstalls the app.</li>
+   <li> Users can create tasks category-wise, delete them as well as mark them completed. </li>
+   <li> Weekly analysis is shown. </li>
+   <li> Motivational Quotes are fetched from FavQs api </li>
    <li> Firestore is used to store and fetch data </li>
-   <li> Pomodoro timer with short and long break </li>
+   <li> Pomodoro technique, featuring timed work sessions with short and long breaks, accompanied by audible alerts upon each session completion.</li>
    <li> Minimal UI and satisfying animations </li>
 
 # Screenshots
